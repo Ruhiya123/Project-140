@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ping Pong</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body background="background1.jpg">
+    <center>
+        <div class="container">
+            <h1 class="btn btn-warning heading">AI PING PONG GAME</h1>
+            <button id="instructionsBtn" class="btn" data-toggle="modal" data-target="#myModal">Instructions</button>
+            <br><br>
+            <button id="playBtn" class="btn btn-success">Play</button>
+            <!-- Add restart button -->
+            <button id="restartBtn" class="btn btn-primary">Restart</button>
+            <h3 id="gameStatus"></h3>
+            <div id="canvasContainer"></div>
+        </div>
+    </center>
+
+    <!-- Bootstrap Modal -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h3 class="modal-title">Instructions</h3>
+                </div>
+                <div class="modal-body">
+                    <p>1. First keep your laptop screen straight.<br> 
+                    2. Move yourself approximately 3-4 feet away from the laptop.<br> 
+                    3. Move your right wrist in an ascending and descending order, a red dot should appear on your right wrist.<br> 
+                    4. Now press the play button and again move yourself approximately 3-4 feet away from the laptop.<br> 
+                    5. The red paddle is your paddle, that will move as per the movement of your right wrist.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Created by Saundarya Singh</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Add p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <!-- Add your main.js script -->
+    <script src="main.js"></script>
+</body>
+</html>
+
+
